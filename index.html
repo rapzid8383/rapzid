@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAPZ ID</title>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#000;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:#111;
+border:2px solid #ffd700;
+padding:30px;
+border-radius:20px;
+text-align:center;
+width:90%;
+max-width:400px;
+box-shadow:0 0 20px #ffd700;
+}
+
+h1{
+color:#ffd700;
+margin-bottom:10px;
+}
+
+.dana{
+font-size:22px;
+font-weight:bold;
+margin:20px 0;
+color:#ffd700;
+}
+
+button{
+background:#ffd700;
+color:#000;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.9;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>RAPZ ID</h1>
+<p>Pembayaran DANA</p>
+
+<div class="dana" id="nomor">
+083123503775
+</div>
+
+<button onclick="salin()">
+Salin Nomor DANA
+</button>
+
+<p style="margin-top:20px;">
+Terima kasih sudah bertransaksi 🙏
+</p>
+</div>
+
+<script>
+function salin(){
+navigator.clipboard.writeText("083123503775");
+alert("Nomor DANA berhasil disalin!");
+}
+</script>
+
+</body>
+</html>
